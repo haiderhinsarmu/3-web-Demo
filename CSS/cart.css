@@ -1,0 +1,197 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+}
+
+html,
+body{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ font-family: "Poppins", sans-serif;
+}
+
+.cart-container{
+ top: 20vh;
+ width: 100%;
+ bottom: 0;
+ position: fixed;
+ display: grid;
+ grid-template-rows: 50px 50px 1fr 70px;
+
+
+ h2{
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+ }
+
+ .total-price{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 2px;
+ }
+
+ .cart-wraper{
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr;
+  margin-left: 10rem;
+  overflow: auto;
+
+
+
+  .empty{
+   width: 95%;
+   text-align: center;
+   justify-content: center;
+   font-size: 1.5rem;
+   margin-top: 2rem;
+  }
+
+
+  .cart-item{
+   display: flex;
+   width: 100%;
+   height: 70px;
+   background-color: blue;
+   padding: 0.5rem 1rem;
+   margin-bottom: 1rem;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 10px;
+
+   &:nth-child(even){
+    background-color: #ca49fd;
+   }
+   
+   
+
+   img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+
+    &:hover{
+     filter: brightness(1.2);
+    }
+   }
+
+   h3{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    &:hover{
+     color: hwb(271 82% 2%);
+    }
+   }
+
+   p{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 600;
+   }
+
+   i{
+    color: #fd6464;
+    font-size: 2.2rem;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s ease;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    &:hover{
+     color: #ff0505;
+
+     &:active{
+      transform: translateY(2px);
+      text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+     }
+    }
+   }
+   span{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    &:hover{
+     color: hwb(271 82% 2%);
+    }
+   }
+
+   .quantity-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+
+    button{
+     font-size: 2rem;
+     cursor: pointer;
+     transition: color 0.3s ease;
+     text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+     &:hover{
+      color: #ff0505;
+      &:active{
+       transform: translateY(2px);
+       text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+     }
+    }
+   }
+  }
+ }
+
+ .checkout-clrearAll-Btn{
+  bottom: 0;
+  position: fixed;
+  left: 50%;
+  width: 80%;
+  background-color: #3d3c3c;
+  transform: translate(-50%);
+  margin-left: 1.5rem;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+ }
+
+ .clear-all-btn, .checkout-btn{
+  color: #fff;
+  background-color: #ca49fd;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+
+  &:hover{
+   background-color: hwb(271 7% 0%);
+
+   &:active{
+    transform: translateY(2px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+   }
+  }
+
+ }
+
+}

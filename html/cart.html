@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/CSS/index.css">
+ <link rel="stylesheet" href="/CSS/cart.css">
+ <title>Home page</title>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="toggle-container">
+        <button><i class='bx bx-menu'></i></button>
+      </div> 
+      <div class="logo-container">
+        <h1><a href="/html/index.html">Haider<span>yahiya</span></a></h1>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button><i class='bx bx-search'></i></button>
+      </div>
+      <div class="user-container">
+        <a href="/html/login.html"><i class='bx bx-user'></i></a>
+      </div>
+      <div class="shopping-cart">
+        <a href="/html/cart.html"><i class='bx bx-cart-download'></i></a>
+        <span class="counter">0</span>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="header-bottom">
+      <div class="dropdown">
+        <button class="categoryBtn">Category</button>
+        <div class="dropdown-menu">
+          <button data-id="Rings">Rings</button>
+          <button data-id="Watches">Watches</button>
+          <button data-id="Armbinde">Armbinde</button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="/html/index.html">Home</a></li>
+          <li><a class="nav-link" href="#About">About</a></li>
+          <li><a class="nav-link" href="#Services">Services</a></li>
+          <li><a class="nav-link" href="#Contact">Contact</a></li>
+          <li><a class="nav-link" href="#Blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section>
+    <div class="side-menu">
+      <ul>
+        <li>
+          <a href="">
+            <span class="user"><span class="side-menu-item">haider yahiya</span></span>
+            <i class='bx bx-user'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Home</span>
+            <i class='bx bx-home'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Dashboard</span>
+            <i class='bx bx-grid-alt'></i>
+          </a>
+        </li> 
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Edit Profile</span>
+            <i class='bx bx-edit-alt'></i>
+            <i class='bx bx-product'></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="">
+            <span class="side-menu-item">Notifications</span>
+            <i class='bx bx-bell'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Settings</span>
+            <i class='bx bx-cog'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Help</span>
+            <i class='bx bx-help-circle'></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="">
+            <span class="side-menu-item">Logout</span>
+            <i class='bx bx-log-out'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+   <div class="cart-container">
+    <h2>cart</h2>
+    <div class="total-price">
+      <span>Total Price:</span>
+      <span>$300</span>
+     </div>
+    <div class="cart-wraper">
+     <div class="cart-item">
+      <div class="images">
+       <img src="/IMGS/pic1.jfif" alt="">
+      </div>
+      <div class="name">
+       <h3>Armband</h3>
+      </div>
+      <div class="remove">
+       <i class='bx bx-trash'></i>
+      </div>
+      <div class="price">
+       <span>$100</span>
+      </div>
+      <div class="quantity-icons">
+       <button class="btn-minus">-</button>
+       <p class="amount">1</p>
+       <button class="btn-plus">+</button>
+      </div>
+     </div>
+     <div class="cart-item">
+      <div class="images">
+       <img src="/IMGS/pic1.jfif" alt="">
+      </div>
+      <div class="name">
+       <h3>Armband</h3>
+      </div>
+      <div class="remove">
+       <i class='bx bx-trash'></i>
+      </div>
+      <div class="price">
+       <span>$100</span>
+      </div>
+      <div class="quantity-icons">
+       <button class="btn-minus">-</button>
+       <p class="amount">1</p>
+       <button class="btn-plus">+</button>
+      </div>
+     </div>
+     <div class="cart-item">
+      <div class="images">
+       <img src="/IMGS/pic1.jfif" alt="">
+      </div>
+      <div class="name">
+       <h3>Armband</h3>
+      </div>
+      <div class="remove">
+       <i class='bx bx-trash'></i>
+      </div>
+      <div class="price">
+       <span>$100</span>
+      </div>
+      <div class="quantity-icons">
+       <button class="btn-minus">-</button>
+       <p class="amount">1</p>
+       <button class="btn-plus">+</button>
+      </div>
+     </div>
+     <div class="cart-item">
+      <div class="images">
+       <img src="/IMGS/pic1.jfif" alt="">
+      </div>
+      <div class="name">
+       <h3>Armband</h3>
+      </div>
+      <div class="remove">
+       <i class='bx bx-trash'></i>
+      </div>
+      <div class="price">
+       <span>$100</span>
+      </div>
+      <div class="quantity-icons">
+       <button class="btn-minus">-</button>
+       <p class="amount">1</p>
+       <button class="btn-plus">+</button>
+      </div>
+     </div>
+    </div>
+    <div class="checkout-clrearAll-Btn">
+
+     <div class="clear-all-btn-div">
+      <button class="clear-all-btn">Clear All</button>
+     </div>
+
+    <div class="checkout-btn-div">
+     <button
+      class="checkout-btn"
+      onclick="window.location.href='/html/checkout.html'"
+     >Checkout</button>
+    </div>
+   </div>
+   </div>
+  </section>
+  <script type="module" src="/JS/cart.js"></script>
+  </body>
+  </html>

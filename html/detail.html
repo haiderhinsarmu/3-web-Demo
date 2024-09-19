@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/CSS/index.css">
+ <link rel="stylesheet" href="/CSS/details.css">
+ <title>Home page</title>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="toggle-container">
+        <button><i class='bx bx-menu'></i></button>
+      </div> 
+      <div class="logo-container">
+        <h1><a href="/html/index.html">Haider<span>yahiya</span></a></h1>
+      </div>
+      <div class="search-container">
+        <form action="">
+          <input id="searchInput" type="search" placeholder="Search...">
+        </form>
+        <button><i class='bx bx-search'></i></button>
+      </div>
+      <div class="user-container">
+        <a href="/html/login.html"><i class='bx bx-user'></i></a>
+      </div>
+      <div class="shopping-cart">
+        <a href="/html/cart.html"><i class='bx bx-cart-download'></i></a>
+        <span class="counter">0</span>
+      </div>
+    </div>
+  </header>
+  
+  <section>
+    <div class="header-bottom">
+      <div class="dropdown">
+        <button class="categoryBtn">Category</button>
+        <div class="dropdown-menu">
+          <button class="filter-btn" data-id="Ring">Rings</button>
+          <button class="filter-btn" data-id="Uhr">Uhren</button>
+          <button class="filter-btn" data-id="Armbinde">Armbinde</button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="/html/index.html">Home</a></li>
+          <li><a class="nav-link" href="#About">About</a></li>
+          <li><a class="nav-link" href="#Services">Services</a></li>
+          <li><a class="nav-link" href="#Contact">Contact</a></li>
+          <li><a class="nav-link" href="#Blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section>
+    <div class="side-menu">
+      <ul>
+        <li>
+          <a href="">
+            <span class="user"><span class="side-menu-item">haider yahiya</span></span>
+            <i class='bx bx-user'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Home</span>
+            <i class='bx bx-home'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Dashboard</span>
+            <i class='bx bx-grid-alt'></i>
+          </a>
+        </li> 
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Edit Profile</span>
+            <i class='bx bx-edit-alt'></i>
+            <i class='bx bx-product'></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="">
+            <span class="side-menu-item">Notifications</span>
+            <i class='bx bx-bell'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Settings</span>
+            <i class='bx bx-cog'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Help</span>
+            <i class='bx bx-help-circle'></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="">
+            <span class="side-menu-item">Logout</span>
+            <i class='bx bx-log-out'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="searchResoultConteiner">
+      <h1>Search Results</h1>
+      <div class="searchResoultWraper">
+
+        <div class="searchResoultItem">
+          <a href="/html/detail.html">
+            <img src="/IMGS/pic1.jfif" alt="pic">
+          </a>
+          <h2>Product 1</h2>
+          <span>price</span>
+          <span class="discount">50%</span>
+          <button type="button" class="addSearchResoultToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="dropDownResoultContainer">
+      <h1>Filtered Category Results</h1>
+      <div class="dropDownResoultWraper">
+
+        <div class="dropDownResoultItem">
+          <a href="/html/detail.html">
+            <img src="/IMGS/pic1.jfif" alt="pic">
+          </a>
+          <h2>Product 1</h2>
+          <p>price</p>
+          <span class="discount">50%</span>
+          <button type="button" class="addDropDownItemToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+  </section>
+
+  <section>
+   <div class="details-container">
+    <h2>Details</h2>
+    <div class="detailsWraper">
+     <div class="details">
+      <div class="detailImg">
+        <img src="/IMGS/pic010.jfif" alt="">
+      </div>
+    </div>
+    <div class="details-ditail">
+      <h3>Product Name</h3>
+      <h4>Price: $100</h4>
+      <span>50%</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque elit. Sed ut imperdiet nisi. Proin euismod metus non erat fermentum, ut posuere velit sagittis. Sed vel lectus vel ipsum tincidunt dignissim. Sed in velit id ipsum laoreet tincidunt. Nulla facilisi. Nulla facilisi. Nulla facilisi.</p>
+      <button
+      type="button"
+      class="addToCart"
+      >Add to Cart</button>
+     </div>
+    </div>
+   </div>
+</section>
+
+  <section>
+    <div class="relatedProductsContainer">
+      <h2>Related Products</h2>
+      <div class="relatedProductsWraper">
+       <div class="relatedProduct">
+        <a href="/html/detail.html">
+         <img src="/IMGS/pic010.jfif" alt="">
+        </a>
+        <h3>Product Name</h3>
+        <p>Price: $100</p>
+        <span>50%</span>
+        <button type="button" class="addToRelatedProductCartBtn">Add to Cart</button>
+       </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="/JS/detail.js"></script>
+</body>
+</html>

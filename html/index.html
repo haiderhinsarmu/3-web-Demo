@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/CSS/index.css">
+ <title>Home page</title>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="toggle-container">
+        <button><i class='bx bx-menu'></i></button>
+      </div> 
+      <div class="logo-container">
+        <h1><a href="/html/index.html">Haider<span>yahiya</span></a></h1>
+      </div>
+      <div class="search-container">
+        <form action="">
+          <input id="searchInput" type="search" placeholder="Search...">
+        </form>
+        <button><i class='bx bx-search'></i></button>
+      </div>
+      <div class="user-container">
+        <a href="/html/login.html"><i class='bx bx-user'></i></a>
+      </div>
+      <div class="shopping-cart">
+        <a href="/html/cart.html"><i class='bx bx-cart-download'></i></a>
+        <span class="counter">0</span>
+      </div>
+    </div>
+  </header>
+  
+  <section>
+    <div class="header-bottom">
+      <div class="dropdown">
+        <button class="categoryBtn">Category</button>
+        <div class="dropdown-menu">
+          <button class="filter-btn" data-id="Ring">Rings</button>
+          <button class="filter-btn" data-id="Uhr">Uhren</button>
+          <button class="filter-btn" data-id="Armbinde">Armbinde</button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="/html/index.html">Home</a></li>
+          <li><a class="nav-link" href="#About">About</a></li>
+          <li><a class="nav-link" href="#Blog">Blog</a></li>
+          <li><a class="nav-link" href="#Services">Services</a></li>
+          <li><a class="nav-link" href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section>
+    <div class="side-menu">
+      <ul>
+        <li>
+          <a href="">
+            <span class="user"><span class="side-menu-item">haider yahiya</span></span>
+            <i class='bx bx-user'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Home</span>
+            <i class='bx bx-home'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Dashboard</span>
+            <i class='bx bx-grid-alt'></i>
+          </a>
+        </li> 
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Edit Profile</span>
+            <i class='bx bx-edit-alt'></i>
+            <i class='bx bx-product'></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="">
+            <span class="side-menu-item">Notifications</span>
+            <i class='bx bx-bell'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Settings</span>
+            <i class='bx bx-cog'></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <span class="side-menu-item">Help</span>
+            <i class='bx bx-help-circle'></i>
+          </a>
+        </li>
+      
+        <li>
+          <a href="">
+            <span class="side-menu-item">Logout</span>
+            <i class='bx bx-log-out'></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="searchResoultConteiner">
+      <h1>Search Results</h1>
+      <div class="searchResoultWraper">
+
+        <div class="searchResoultItem">
+          <a href="/html/detail.html">
+            <img src="/IMGS/pic1.jfif" alt="pic">
+          </a>
+          <h2>Product 1</h2>
+          <span>price</span>
+          <span class="discount">50%</span>
+          <button type="button" class="addSearchResoultToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="dropDownResoultContainer">
+      <h1>Filtered Category Results</h1>
+      <div class="dropDownResoultWraper">
+
+        <div class="dropDownResoultItem">
+          <a href="/html/detail.html">
+            <img src="/IMGS/pic1.jfif" alt="pic">
+          </a>
+          <h2>Product 1</h2>
+          <p>price</p>
+          <span class="discount">50%</span>
+          <button type="button" class="addDropDownItemToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+  </section>
+
+  <main>
+  <section>
+    <div class="mainSectionContainer">
+      <div class="context-image">
+      <div class="context">
+        <h1 class="h1">50%</h1>
+        <h2 class="h2">Off All</h2>
+        <div class="countDown">
+          <span class="month"></span>
+          <span><span class="day"></span>, </span>
+          <span><span class="hour"></span> :</span>
+          <span><span class="minutes"></span> :</span>
+          <span class="second"></span>
+          <div class="yearcontainer">
+            <span class="year">0000</span>
+          </div>
+        </div>
+      </div>
+      <div class="mainPictures">
+        <div class="imags">
+          <img class="img" src="/IMGS/pic1.jfif" alt="pic">
+          <span class="percent">50%</span>
+        </div>
+        <div class="imgButton">
+          <a href="/html/percentage.html">
+
+            <button type="button"
+             class="gotoShopNow">Shop Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  </main>
+
+  <section>
+    <div class="dealOfWeekIntro">
+      <h1>Deal of the Week</h1>
+      <h2>Discover the best deals and discounts</h2>
+    </div>
+  </section>
+
+  <section>
+    
+    <div class="Watches-container">
+      <h2>Watches</h2>
+      <div class="Watches-wraper">
+        <div class="Watch-item">
+          <a href="/html/detail.html">
+            <img src="/IMGS/pic1.jfif" alt="pic">
+          </a>
+            <h3>Gold Watch</h3>
+            <p>Starting from $100</p>
+            <span>50%</span>
+            <button type="button" class="addWatchBtn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div id="Armbinde" class="armbind-container">
+      <h2>Armbinde</h2>
+
+      <div class="armBinde-wraper">
+
+        <div class="armbind-item">
+          <a href="/html/detail.html">
+            <img src="/IMGS/pic01.jfif" alt="pic">
+          </a>
+            <h3>Black Armbinde</h3>
+            <p>Starting from $50</p>
+            <span>30%</span>
+            <button type="button" class="addArmBandBtn">Add to Cart</button>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div id="Ring" class="ring-container">
+      <h2>Rings</h2>
+      <div class="ring-wraper">
+        <div class="ring-item">
+          <a href="/html/detail.html">
+          <img src="/IMGS/pic0101.jfif" alt="pic">
+        </a>
+            <h3>Gold Ring</h3>
+            <p>$20</p>
+            <span>40%</span>
+            <button type="button" class="addRingBtn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div id="watches" class="bestseller-container">
+      <h1>Best Sellers</h1>
+      <h2>Discover the best sellers and deals</h2>
+      <div class="bestseller-wraper">
+        <div class="bestseller-item">
+          <a href="/html/detail.html">
+            <img src="/IMGS/bu1.jpg" alt="pic">
+          </a>
+            <h3>Gold Ring</h3>
+            <p>$20</p>
+            <button type="button" class="addBestsellerBtn">Add to Cart</button>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="ourproduct-container">
+      <h1>Our Products</h1>
+      <h2>Discover our products and offers</h2>
+      <div class="ourproduct-wraper">
+        <div class="ourproduct-item">
+          <a href="/html/detail.html">
+            <img src="/IMGS/bu1.jpg" alt="pic">
+          </a>
+            <h3>Gold Ring</h3>
+            <p>$20</p>
+            <button type="button" class="addOurproductBtn">Add to Cart</button>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="About" class="aboutContainer">
+      <h1>About Us</h1>
+      <h2>Discover our company and history</h2>
+      <div class="aboutWraper">
+        <div class="aboutItem1 item">
+          <h3>Company Story</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend lectus, ut suscipit orci. Donec fermentum ex ac eros bibendum, vel volutpat eros consectetur. Nulla facilisi.</p>
+          <button>Read More</button>
+        </div>
+
+        <div class="aboutItem2 item">
+        <h3>Our Team</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend lectus, ut suscipit orci. Donec fermentum ex ac eros bibendum, vel volutpat eros consectetur. Nulla facilisi.</p>
+        <button>Read More</button>
+    </div>
+    </div>
+    <div class="socialMediaIcons">
+      <div class="line"></div>
+      <a href="#" target="">
+        <i class='bx bxl-facebook-circle'></i>
+      </a>
+      
+      <a href="#" target="">
+        <i class='bx bxl-twitter'></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class='bx bxl-instagram'></i>
+      </a>
+      
+      <a href="#" target="_blank">
+        <i class='bx bxl-youtube'></i>
+      </a>
+
+  </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="Blog" class="blogContainer">
+      <h1>Our Blog</h1>
+      <h2>Discover our blog and updates</h2>
+      <div class="blogWraper">
+        <div class="blogItem">
+          <img src="/IMGS/blog1.jpg" alt="pic">
+          <h3>Ring</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend lectus, ut suscipit orci. Donec fermentum ex ac eros bibendum, vel volutpat eros consectetur. Nulla facilisi.</p>
+          <a href="/html/blog.html">Read More</a>
+        </div>
+
+        <div class="blogItem">
+          <img src="/IMGS/blog3.jpg" alt="pic">
+          <h3>Watch</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend lectus, ut suscipit orci. Donec fermentum ex ac eros bibendum, vel volutpat eros consectetur. Nulla facilisi.</p>
+          <a href="/html/blog.html">Read More</a>
+        </div>
+        <div class="blogItem">
+          <img src="/IMGS/blog5.jpg" alt="pic">
+          <h3>Armbind</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend lectus, ut suscipit orci. Donec fermentum ex ac eros bibendum, vel volutpat eros consectetur. Nulla facilisi.</p>
+          <a href="/html/blog.html">Read More 
+            </a>
+        </div>
+        <div class="blogItem">
+          <img src="/IMGS/blogring1.jpg" alt="pic">
+          <h3>Ring</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend lectus, ut suscipit orci. Donec fermentum ex ac eros bibendum, vel volutpat eros consectetur. Nulla facilisi.</p>
+          <a href="/html/blog.html">Read More 
+            </a>
+        </div>
+        <div class="blogItem">
+          <img src="/IMGS/blog8.jpg" alt="pic">
+          <h3>Watch</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend lectus, ut suscipit orci. Donec fermentum ex ac eros bibendum, vel volutpat eros consectetur. Nulla facilisi.</p>
+          <a href="/html/blog.html">
+            Read More 
+          </a>
+      </div>
+        <div class="blogItem">
+          <img src="/IMGS/blog7.jpg" alt="pic">
+          <h3>Watch</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend lectus, ut suscipit orci. Donec fermentum ex ac eros bibendum, vel volutpat eros consectetur. Nulla facilisi.</p>
+          <a href="/html/blog.html">
+            Read More 
+          </a>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div id="Services" class="ourservicess">
+      <h1>Our Services</h1>
+      <h2>Discover our services and offers</h2>
+      <div class="ourservicess-wraper">
+        <div class="ourServicess-item">
+          <img src="/IMGS/delivery-car.png" alt="car">
+          <p>Free Delivery</p>
+        </div>
+        <div class="ourServicess-item">
+          <img src="/IMGS/support.png" alt="support">
+          <p>24/7 Support</p>
+        </div>
+        <div class="ourServicess-item">
+          <img src="/IMGS/product-return.png" alt="return">
+          <p>Product Returns</p>
+        </div>
+        <div class="ourServicess-item">
+          <img src="/IMGS/cashless-payment.png" alt="payment">
+          <p>Cashless Payment</p>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="Contact" class="contactContainer">
+      <h1>Contact Us</h1>
+      <h2>Get in touch with us</h2>
+      <div class="contactWraper">
+        <form action="">
+          <div class="formControll">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="formControll">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="formControll">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="formControll">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <div class="contactImage">
+          <img src="/IMGS/kommunizieren.png" alt="contact">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footerContainer">
+      <div class="footerWraper">
+        <div class="footerItem">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footerItem">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#Ring">Ring</a></li>
+            <li><a href="#Armbinde">Armbinde</a></li>
+            <li><a href="#watches">Watches</a></li>
+          </ul>
+        </div>
+        <div class="footerItem">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footerItem">
+          <h3>Contact</h3>
+          <ul>
+            <li>Address: 123 Main St, City, State, ZIP</li>
+            <li>Phone: (123) 456-7890</li>
+            <li>Email: info@example.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="socialMediaIcons">
+        <a href="#" target="">
+          <i class='bx bxl-facebook-circle'></i>
+        </a>
+        
+        <a href="#" target="">
+          <i class='bx bxl-twitter'></i>
+        </a>
+        
+        <a href="#" target="_blank">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        
+        <a href="#" target="_blank">
+          <i class='bx bxl-youtube'></i>
+        </a>
+
+        <a href="#" target="_blank">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+      <div class="scrollUpArrow">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+      <div class="copyright">
+        &copy; <span class="year">0000</span> Your Website. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/JS/index.js"></script>
+</body>
+</html>
